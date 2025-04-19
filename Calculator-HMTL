@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>KutayDemirbas</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 30px;
+      text-align: center;
+    }
+
+    input[type="number"] {
+      padding: 10px;
+      font-size: 16px;
+      margin: 10px;
+      width: 200px;
+    }
+
+    label {
+      display: block;
+      font-weight: bold;
+      font-size: 18px;
+      margin-top: 15px;
+    }
+
+    #result {
+      font-size: 48px;
+      font-weight: bold;
+      margin: 30px 0;
+    }
+
+    button {
+      font-size: 20px;
+      padding: 10px 20px;
+      margin: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <label for="num1">SAYI1</label>
+  <input type="number" id="num1" />
+
+  <label for="num2">Sayı2</label>
+  <input type="number" id="num2" />
+
+  <div id="result">0</div>
+
+  <div>
+    <button onclick="calculate('+')">+</button>
+    <button onclick="calculate('*')">*</button>
+    <button onclick="calculate('/')">/</button>
+    <button onclick="calculate('-')">-</button>
+  </div>
+
+  <script>
+    function calculate(operator) {
+      const num1 = parseFloat(document.getElementById("num1").value);
+      const num2 = parseFloat(document.getElementById("num2").value);
+      let result = 0;
+
+      if (isNaN(num1) || isNaN(num2)) {
+        result = "Please enter valid numbers";
+      } else {
+        switch (operator) {
+          case '+':
+            result = num1 + num2;
+            break;
+          case '-':
+            result = num1 - num2;
+            break;
+          case '*':
+            result = num1 * num2;
+            break;
+          case '/':
+            result = num2 !== 0 ? num1 / num2 : "Cannot divide by zero";
+            break;
+        }
+      }
+
+      document.getElementById("result").textContent = result;
+    }
+  </script>
+</body>
+</html>
