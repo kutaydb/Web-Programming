@@ -1,2 +1,2 @@
 # Web Programming 
- School Project 
+ School Project using HTML / CSS
