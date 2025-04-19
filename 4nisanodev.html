@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="4nisanodev.css">
+</head>
+
+<body>
+    
+    <header class="header">
+        <a href="#">
+            <img src="kutaylogo.png" alt="" style="width:200px ;" width="200px">
+        </a>
+        <nav class="nav-links">
+            <a href="#">Homepage</a>
+            <a href="#">Products</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+        <input type="text" placeholder="Search..." class="search">
+    </header>
+
+    <h3 class="nyc">N E W Y O R K C I T Y</h3>
+
+    <section class="container">
+        <div class="slider-wrapper">
+            <div class="slider">
+                <img id="slide-1" src="newyork1.jpeg" alt="newyork1" >
+                <img id="slide-2" src="newyork2.jpeg" alt="newyork2" >
+                <img id="slide-3" src="newyork3.jpeg" alt="newyork3" >
+            </div>
+            <div class="slider-nav">
+                <a href="#slide-1"></a>
+                <a href="#slide-2"></a>
+                <a href="#slide-3"></a>
+            </div>
+        </div>
+    </section>
+
+    <h3 class="button1">
+        B U T T O N S
+    </h3>  
+
+    <section class="buttons">
+
+        <a href="#">
+        <button class="button" id="primary" >Primary Button</button>
+        </a>
+
+        <a href="#">
+        <button class="button" id="active" >Active Primary</button>
+        </a>
+
+        <a href="#">
+        <button class="button" id="disabled" >Disabled Primary</button>
+        </a>
+
+    </section>
+
+    <h3 class="acc">A C C O R D I O N</h3>
+
+    <ul class="accordion">
+        <li>
+            <input type="radio" name="accordion" id="first" checked>
+            <label for="first">Product</label>
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+            </div>
+        </li>
+        <li>
+            <input type="radio" name="accordion" id="second">
+            <label for="second">Information</label>
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+            </div>
+        </li>
+        <li>
+            <input type="radio" name="accordion" id="third">
+            <label for="third">Questions</label>
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+            </div>
+        </li>
+        <li>
+            <input type="radio" name="accordion" id="fourth">
+            <label for="fourth">Guides</label>
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+            </div>
+        </li>
+    </ul>
+
+    <label for="modal-toggle" class="open-btn">M O D A L</label>
+    <input type="checkbox" id="modal-toggle" class="modal-checkbox">
+
+    <div class="modal">
+        <div class="modal-content">
+            <label for="modal-toggle" class="close">&times;</label>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores, odio.</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
